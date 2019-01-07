@@ -1,0 +1,56 @@
+/*FONT*/
+
+@font-face{
+	font-family: ebrima;
+	scr:url(ebrima.ttf);
+}
+
+
+
+/*COMMUN*/
+
+*{
+	padding: 0;
+	margin: 0;
+
+}
+
+body {
+	background-image: url(../img/numero1/bann.gif);
+	background-repeat: no-repeat;
+	background-position: 100% 0%;
+	background-size: 90%;
+}
+
+
+/*NAV*/
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end; 
+}
+
+	nav a {
+		padding-right: 50px;
+		padding-top: 10px;
+		color: white;
+		text-decoration: none;
+		font-family: ebrima, arial;
+		font-size: 1.2em;
+	transition:all 300ms ease;
+		
+	}
+
+		nav a:hover {
+			color: black;
+			font-size: 1.4em;
+		}
+
+	nav img{
+		width: 60px;
+		height: 40px;
+	}
+
+
+

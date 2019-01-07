@@ -1,0 +1,26 @@
+TYPOS A UTILISER
+
+GROS TITRE ARTICLES (Type Interview FTH, Sorties de Décembre, Identité Visuelle)
+	* Ebrima Bold 60pt
+
+SOUS TITRE ARTICLES (Type L'identité scénique)
+	* Ebrima Bold 48pt
+
+CHAPEAU ARTICLE
+	* Ebrima Regular / italic 12pt 
+
+QUESTION INTERVIEW
+	* Ebrima Regular 18pt
+
+REPONSE INTERVIEW
+	* Ebrima Regular 11pt
+
+CORPS DE TEXTE (Type articles Sorties, Identité visuelle)
+	* Ebrima Regular 12pt ou 14pt
+
+COUP DE COEUR
+	TITRE MUSIQUE
+		* Ebrima Bold 18pt
+	ARTISTE
+		* Ebrima Regular 18pt
+

@@ -1,0 +1,748 @@
+/*My hum... body.. yeah.. */
+body {
+  background-color: #aeaeae;
+  font-family: "Roboto", sans-serif;
+}
+
+#btn_partage {
+	background-color: red;
+}
+
+
+
+/*************************** Header ************************************/
+
+
+
+
+/*************************** Navigation ************************************/
+
+.side {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1000;
+  width: 50px;
+  border-right: 1px dashed rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "nimbus-sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .0875rem;
+  font-size: 10px;
+  transition: all 0.3s cubic-bezier(0.05, 0.69, 0.14, 1);
+}
+.side:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+.side .side__inner {
+  position: relative;
+  height: 100%;
+  white-space: nowrap;
+}
+.side a {
+  color: inherit;
+  word-spacing: 0;
+  transition: all 0.3s cubic-bezier(0.05, 0.69, 0.14, 1);
+}
+.side .top,
+.side .bottom {
+  position: absolute;
+  left: 0;
+  -webkit-transform: rotate(-90deg) perspective(1px);
+          transform: rotate(-90deg) perspective(1px);
+  -webkit-transform-origin: 50px 50px;
+          transform-origin: 50px 50px;
+  height: 50px;
+  line-height: 50px;
+  white-space: nowrap;
+  word-spacing: .5rem;
+}
+.side .top {
+  top: 25px;
+  text-align: right;
+  color: black;
+}
+.side .bottom {
+  top: auto;
+  bottom: 75px;
+}
+.side .bottom:hover a {
+  color: rgba(0, 0, 0, 0.2);
+}
+.side .bottom:hover a:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/*************************** blog ************************************/
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+/*Just the background stuff */
+
+
+
+
+/* The card */
+.card {
+  position: relative;
+  height: 450px;
+  width: 900px;
+  margin: 200px auto;
+  background-color: #FFF;
+  -webkit-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 93px 0px rgba(0, 0, 0, 0.75);
+}
+
+	/* Image on the left side */
+	.blog .thumbnail {
+	  float: left;
+	  position: relative;
+	  left: 30px;
+	  top: -30px;
+	  height: 320px;
+	  width: 530px;
+	  -webkit-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+	  -moz-box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+	  box-shadow: 10px 10px 60px 0px rgba(0, 0, 0, 0.75);
+	  overflow: hidden;
+	}
+
+/*object-fit: cover; */
+/*object-position: center; */
+.blog img.left {
+	height: 100%;
+	position: absolute;  
+	left: 50%;
+	top: 50%;
+	height: auto;
+	width: 100%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+/* Right side of the card */
+.blog .right {
+  margin-left: 590px;
+  margin-right: 20px;
+}
+
+		.blog h1 {
+		  padding-top: 15px;
+		  font-size: 1.3rem;
+		  color: #4B4B4B;
+		}
+
+
+
+		.blog h2 {
+		  padding-top: 8px;
+		  margin-right: 6px;
+		  text-align: right;
+		  font-size: 0.8rem;
+		}
+
+			.blog .separator {
+			  margin-top: 10px;
+			  border: 1px solid #C3C3C3;
+			}
+
+.blog p {
+  text-align: justify;
+  padding-top: 10px;
+  font-size: 0.95rem;
+  line-height: 150%;
+  color: #4B4B4B;
+}
+
+	<!--cas--!>
+	.pop-up p{
+		width: 800px;
+	}
+
+
+/* DATE of release */
+.blog h5 {
+  position: absolute;
+  left: 30px;
+  bottom: -120px;
+  font-size: 6rem;
+  color: #C3C3C3;
+}
+
+.blog h6 {
+  position: absolute;
+  left: 30px;
+  bottom: -55px;
+  font-size: 2rem;
+  color: #C3C3C3;
+  text-transform: uppercase;
+}
+
+/* Those futur buttons */
+.blog ul {
+  margin-left: 250px;
+}
+
+.blog li {
+  display: inline;
+  list-style: none;
+  padding-right: 40px;
+  color: #7B7B7B;
+}
+
+/* Floating action button */
+.blog .fab {
+  position: absolute;
+  right: 50px;
+  bottom: -40px;
+  box-sizing: border-box;
+  padding-top: 18px;
+  background-color: #1875D0;
+  width: 80px;
+  height: 80px;
+  color: white;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 50px 0px rgba(0, 0, 0, 0.75);
+}
+
+.blog .fa-share-alt:before {
+    content: "\f1e0";
+    position: abo;
+    position: absolute;
+    bottom: 50px;
+}
+
+
+
+
+
+
+
+/*art 1*/
+
+
+.button1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.button1 button {
+  position: absolute;
+  top: 80%;	
+  left: 80%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-family: inherit;
+  background-color: #ffffff;
+  border: 0;
+  padding: 15px 25px;
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 21px;
+  letter-spacing: 1px;
+  width: 200px;
+  overflow: hidden;
+  outline: 0;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  visibility: visible;
+  opacity: 1;
+  font-weight: bold;
+  box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.6);
+}
+.button1 button:hover {
+  cursor: pointer;
+  background-color: #8e6ac1;
+  color: #ffffff;
+}
+.button1 button span {
+  opacity: 1;
+}
+.button1.clicked button {
+  visibility: hidden;
+  oacity: 0;
+}
+
+/* POP-UP
+========================================== */
+.pop-up1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0.9);
+  -moz-transform: translate(-50%, -50%) scale(0.9);
+  -ms-transform: translate(-50%, -50%) scale(0.9);
+  -o-transform: translate(-50%, -50%) scale(0.9);
+  transform: translate(-50%, -50%) scale(0.9);
+  overflow-y: auto;
+  box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.4);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  z-index: 10;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .pop-up1 {
+    width: calc(100% - 40px);
+    height: auto;
+    max-width: 900px;
+  }
+}
+.pop-up1 .content {
+  width: 100%;
+  max-width: 900px;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  min-height: 100vh;
+}
+@media (min-width: 768px) {
+  .pop-up1 .content {
+    min-height: inherit;
+  }
+}
+.pop-up1 .content .container {
+  padding: 100px 20px 140px;
+}
+@media (min-width: 568px) {
+  .pop-up1 .content .container {
+    padding: 50px 20px 80px;
+  }
+}
+@media (min-width: 768px) {
+  .pop-up1 .content .container {
+    padding: 70px 0px 90px;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+}
+.pop-up1 .content .close {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  font-size: 1.1rem;
+  letter-spacing: 0.05rem;
+  color: #3e4146;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.pop-up1 .content .close:hover {
+  cursor: pointer;
+  color: #f66867;
+}
+
+.pop-up1 .content .title h1 {
+  text-align: center;
+  color: #f66867;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 2.8rem;
+  letter-spacing: 0.05rem;
+}
+
+.pop-up1 .content .subscribe h1 {
+  font-size: 1.5rem;
+  color: #3e4146;
+  line-height: 130%;
+  letter-spacing: 0.07rem;
+  margin-bottom: 30px;
+}
+.pop-up1 .content .subscribe h1 span {
+  color: #f66867;
+}
+
+
+.pop-up1.open {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  -moz-transform: translate(-50%, -50%) scale(1);
+  -ms-transform: translate(-50%, -50%) scale(1);
+  -o-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+}
+
+
+
+
+
+
+/*art 2*/
+
+
+.button2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.button2 button {
+  position: absolute;
+  top: 80%;	
+  left: 80%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-family: inherit;
+  background-color: #ffffff;
+  border: 0;
+  padding: 15px 25px;
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 21px;
+  letter-spacing: 1px;
+  width: 200px;
+  overflow: hidden;
+  outline: 0;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  visibility: visible;
+  opacity: 1;
+  font-weight: bold;
+  box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.6);
+}
+.button2 button:hover {
+  cursor: pointer;
+  background-color: #8e6ac1;
+  color: #ffffff;
+}
+.button2 button span {
+  opacity: 1;
+}
+.button2.clicked button {
+  visibility: hidden;
+  oacity: 0;
+}
+
+/* POP-UP
+========================================== */
+.pop-up2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0.9);
+  -moz-transform: translate(-50%, -50%) scale(0.9);
+  -ms-transform: translate(-50%, -50%) scale(0.9);
+  -o-transform: translate(-50%, -50%) scale(0.9);
+  transform: translate(-50%, -50%) scale(0.9);
+  overflow-y: auto;
+  box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.4);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  z-index: 10;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .pop-up2 {
+    width: calc(100% - 40px);
+    height: auto;
+    max-width: 900px;
+  }
+}
+.pop-up2 .content {
+  width: 100%;
+  max-width: 900px;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  min-height: 100vh;
+}
+@media (min-width: 768px) {
+  .pop-up2 .content {
+    min-height: inherit;
+  }
+}
+.pop-up2 .content .container {
+  padding: 100px 20px 140px;
+}
+@media (min-width: 568px) {
+  .pop-up2 .content .container {
+    padding: 50px 20px 80px;
+  }
+}
+@media (min-width: 768px) {
+  .pop-up2 .content .container {
+    padding: 70px 0px 90px;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+}
+.pop-up2 .content .close {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  font-size: 1.1rem;
+  letter-spacing: 0.05rem;
+  color: #3e4146;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.pop-up2 .content .close:hover {
+  cursor: pointer;
+  color: #f66867;
+}
+
+.pop-up2 .content .title h1 {
+  text-align: center;
+  color: #f66867;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 2.8rem;
+  letter-spacing: 0.05rem;
+}
+
+
+.pop-up2 .content .subscribe h1 {
+  font-size: 1.5rem;
+  color: #3e4146;
+  line-height: 130%;
+  letter-spacing: 0.07rem;
+  margin-bottom: 30px;
+}
+.pop-up2 .content .subscribe h1 span {
+  color: #f66867;
+}
+
+
+
+.pop-up2.open {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  -moz-transform: translate(-50%, -50%) scale(1);
+  -ms-transform: translate(-50%, -50%) scale(1);
+  -o-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+}
+
+
+
+
+
+
+
+/*art 3*/
+
+
+.button3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.button3 button {
+  position: absolute;
+  top: 80%;	
+  left: 80%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-family: inherit;
+  background-color: #ffffff;
+  border: 0;
+  padding: 15px 25px;
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 21px;
+  letter-spacing: 1px;
+  width: 200px;
+  overflow: hidden;
+  outline: 0;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  visibility: visible;
+  opacity: 1;
+  font-weight: bold;
+  box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.6);
+}
+.button3 button:hover {
+  cursor: pointer;
+  background-color: #8e6ac1;
+  color: #ffffff;
+}
+.button3 button span {
+  opacity: 1;
+}
+.button3.clicked button {
+  visibility: hidden;
+  oacity: 0;
+}
+
+/* POP-UP
+========================================== */
+.pop-up3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0.9);
+  -moz-transform: translate(-50%, -50%) scale(0.9);
+  -ms-transform: translate(-50%, -50%) scale(0.9);
+  -o-transform: translate(-50%, -50%) scale(0.9);
+  transform: translate(-50%, -50%) scale(0.9);
+  overflow-y: auto;
+  box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.4);
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  z-index: 10;
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .pop-up3 {
+    height: 600px;
+    width: 700px; 													/*********************/
+  }
+}
+.pop-up3 .content {
+  width: 100%;
+  max-width: 700px;												/********************/
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  min-height: 100vh;
+}
+@media (min-width: 768px) {
+  .pop-up3 .content {
+    min-height: inherit;
+  }
+}
+.pop-up3 .content .container {
+  padding: 100px 20px 140px;
+}
+@media (min-width: 568px) {
+  .pop-up3 .content .container {
+    padding: 50px 20px 80px;
+  }
+}
+@media (min-width: 768px) {
+  .pop-up3 .content .container {
+    padding: 70px 0px 90px;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+}
+.pop-up3 .content .close {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  font-size: 1.1rem;
+  letter-spacing: 0.05rem;
+  color: #3e4146;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.pop-up3 .content .close:hover {
+  cursor: pointer;
+  color: #f66867;
+}
+
+.pop-up3 .content .title h1 {
+  text-align: center;
+  color: #f66867;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 2.8rem;
+  letter-spacing: 0.05rem;
+}
+
+.pop-up3 .content .subscribe h1 {
+  font-size: 1.5rem;
+  color: #3e4146;
+  line-height: 130%;
+  letter-spacing: 0.07rem;
+  margin-bottom: 30px;
+}
+.pop-up3 .content .subscribe h1 span {
+  color: #f66867;
+}
+
+
+.pop-up3.open {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  -moz-transform: translate(-50%, -50%) scale(1);
+  -ms-transform: translate(-50%, -50%) scale(1);
+  -o-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************************** Footer ************************************/
+
+
+
