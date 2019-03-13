@@ -1,6 +1,6 @@
 /*My hum... body.. yeah.. */
 body {
-  background-color: #aeaeae;
+  background-color: #343A3E;
   font-family: "Roboto", sans-serif;
 }
 
@@ -44,6 +44,9 @@ body {
   color: inherit;
   word-spacing: 0;
   transition: all 0.3s cubic-bezier(0.05, 0.69, 0.14, 1);
+  font-size: 1.4em;
+  font-weight: 100;
+  text-decoration: none;
 }
 .side .top,
 .side .bottom {
@@ -639,12 +642,12 @@ body {
 @media (min-width: 768px) {
   .pop-up3 {
     height: 600px;
-    width: 700px; 													/*********************/
+    width: 1200px; 													/*********************/
   }
 }
 .pop-up3 .content {
   width: 100%;
-  max-width: 700px;												/********************/
+  max-width: 1500px;												/********************/
   overflow: hidden;
   text-align: center;
   position: relative;
@@ -666,7 +669,7 @@ body {
 @media (min-width: 768px) {
   .pop-up3 .content .container {
     padding: 70px 0px 90px;
-    max-width: 520px;
+    max-width: 1000px;
     margin: 0 auto;
   }
 }
