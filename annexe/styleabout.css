@@ -1,0 +1,210 @@
+/*FONT*/
+
+@font-face{
+	font-family: ebrima;
+	src:url(ebrima.ttf);
+}
+
+
+
+/*COMMUN*/
+
+*{
+	padding: 0;
+	margin: 0;
+
+}
+
+
+
+
+/*NAV*/
+
+nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end; 
+	padding-bottom: 20px; 
+
+}
+
+	nav a {
+		padding-right: 50px;
+		padding-top: 10px;
+		text-decoration: none;
+		font-family: ebrima, arial;
+		font-size: 1.2em;
+		transition:all 300ms ease;
+		color: black;
+		
+	}
+
+		nav a:hover {
+			color: black;
+			font-size: 1.4em;
+			font-weight: bold;
+		}
+
+	nav img{
+		width: 60px;
+		height: 40px;
+	}
+
+
+/*CONTENU*/
+.content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	border-top: 5px solid #D2731A;
+	border-bottom: 5px solid #D2731A;
+
+	font-family: ebrima;
+
+}
+
+
+	@media screen and (max-width: 992px) {
+		.content {
+			flex-direction: column;
+
+			border-top: 0px;
+			border-bottom: 0px;
+			font-size: 2em;
+		}
+	}
+	
+	.left {
+		background: linear-gradient(
+ 		rgba(210, 115, 26, 0.70), 
+ 		rgba(210, 115, 26, 0.70)
+ 		),url(../img/groupe.jpg);
+ 		background-size: cover;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+
+		padding-left: 100px;
+		padding-right: 500px; 
+	}
+
+		.left #bande {
+			width: 5px;
+			background-color: black;
+			height: 200px;
+		}
+
+		.left #text {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			padding: 30px;
+			font-size: 2.2em;
+			background-color: rgba(0,0,0,0.3);
+		}*
+
+			#text img {
+				width: 200px;
+			}
+
+
+			#text small {
+				font-size: 1.5em;
+				font-weight: 100;
+			}
+
+	.about {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-right: 150px;
+	}
+
+
+		.about #personnes {
+			display: flex;
+			flex-direction: row;
+		}
+
+			.about #personne {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				border-radius: 20px;
+				padding: 30px;
+				margin: 20px;
+				width: 200px;
+			}	
+				.about #personne strong {
+					padding-top: 10px;
+				}
+
+				.about #personne small {
+					text-align: center;
+					font-weight: 50;
+				}
+
+				#personne i {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 30px;
+					height: 30px;
+					
+					padding:10px;
+					border-radius: 100%;
+				}
+
+					.cloe i {background-color: #297771;}
+					.candice i {background-color: #A54D30;}
+					.justine i {background-color: #9F8C56;}
+					.arnaud i {background-color: #098273;}
+					.clement i {background-color: #BC7440;}
+					.corentin i {background-color: #607552;}
+
+
+
+/*Footer*/
+
+footer {
+	position: fixed; bottom: 0; width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: black;
+	font-family: ebrima;
+}
+
+	footer img {
+		width: 70px;
+		height: 60px;
+	}
+
+
+		footer #partenaire {
+			padding-left: 30px;
+			display: flex;
+			flex-direction: row;
+		}
+
+		footer #contact {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+		}
+
+		footer #contact a {
+			color: silver;
+			text-decoration: none;
+			padding-right: 20px;
+			font-size: 1.2em;
+		}
+
+			footer #contact a:hover {
+				color: white;
+				font-size:1.3em;
+				transition: ease 0.5s all;
+			}
