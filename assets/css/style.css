@@ -1,0 +1,381 @@
+* {
+    font-family: Ebrima;
+}
+
+body {
+    padding :0;
+    margin: 0;
+    background-image: url(../../img/numero1/bann.gif);
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    background-size: 100%;
+    font-family: ebrima;
+}
+
+@media screen and (max-width: 992px) {
+        body {
+            background-image: url(../../img/numero1/bannT.gif);
+        }
+    }
+
+span {
+    color : #d67400;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+#logo {
+    position: absolute;
+    width: 200px;
+    left: 162px;
+    top: 30px;
+    /* boite 1200px max centrée */
+    margin: 0 auto;
+    /* centrage horizontal d'un display block */
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media screen and (max-width: 1500px) {
+    #logo {
+        top: 10px;
+        left: 15px;
+        width: 150px;
+    }
+
+
+    h1 {
+        font-size:3.5em;
+    }
+}
+
+/*************************    HEADER  ********************************/
+
+/*NAV*/
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 50px;
+    padding-right: 160px;
+}
+
+    nav a {
+        padding-right: 50px;
+        padding-top: 10px;
+        color: white;
+        text-decoration: none;
+        font-family: ebrima, arial;
+        font-size: 1.2em;
+        transition: all 300ms ease;
+    }
+
+        nav a:hover {
+            color: black;
+            font-size: 1.4em;
+        }
+
+    nav img {
+        width: 60px;
+        height: 40px;
+    }
+
+
+    @media screen and (max-width: 992px) {
+        nav {
+            justify-content: left;
+            padding-left: 250px;
+        }
+
+        nav a {
+            font-size: 1.9em;
+        }
+    }
+
+/*********************** edito  **************/
+
+.header {
+    max-width: 1200px;
+    /* boite 1200px max centrée */
+    margin: 0 auto;
+    /* centrage horizontal d'un display block */
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100%;
+}
+
+
+
+    .header h1 {
+        font-family: ebrima;
+        font-size: 3.5em;
+        margin-top: 17%;
+    }
+
+        .header h1 span {
+            color: #d57401;
+        }
+
+        .header h1 strong {
+            color: #a5a5a5;
+        }
+
+            @media screen and (max-width: 1500px) {
+
+                .header h1 {
+                    margin-left: 1%;
+                    margin-top: 40%;
+                }
+            }
+
+
+.edito {
+        color: #686868;
+        font-style: italic;
+        margin-top: 70px;
+        width: 50%;
+    }
+
+        @media screen and (max-width: 1500px) {
+            .edito {
+                margin-top: 90px;
+                width: 100%;
+                font-size: 2em;
+            }
+            .edito span {
+                text-align: left;
+            }
+            .edito p {
+                text-align: justify;
+                padding: 40px;
+                padding-top: 50px;
+                font-size: 1.4em;
+            }
+        }
+
+        .edito span {
+            font-weight: bold;
+            font-size: 1.4em;
+        }
+
+
+/*********************** content *************/
+
+.content {
+    background-image: url("../../img/Background_MusikIn_2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.interview {
+    margin-top : 120px;
+    
+}
+.interview .question {
+    padding : 20px;
+}
+
+ 
+/************************* Electro swing******************/
+
+.electro {
+    display: flex;
+     justify-content: center;
+     align-items: flex-start;
+     flex-direction: column;
+}
+
+    .electro .content-electro {
+        display: flex;
+
+    }
+
+    .electro .content-electro div {
+        width: 50%;
+        padding : 10px;
+    }
+
+        .electro .content-electro .text-electro {
+            margin-right: 20px;
+        }
+
+        .electro .content-electro .video-electro {
+            display: flex;
+            justify-content : center;
+            align-items: center;
+            
+        }
+
+@media (max-width:640px) {
+    .electro .content-electro {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width : 100%;
+        text-align: justify;
+    }
+
+    .electro .content-electro div {
+        width: 100%;
+        padding : 10px;
+    }
+        
+}
+
+
+/************************* Espace détente******************/
+
+
+.detente {
+    height: 100vh;
+    display: flex;
+     justify-content: center;
+     flex-direction: column;
+
+}
+
+    .detente .video-detente {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+/************************ Sorties de Janvier *****************/
+
+
+    .sortie .big-content {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content : center;
+    }
+
+    .sortie .content-sortie {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+        .sortie .content-sortie .elements-sortie {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .sortie .content-sortie .elements-sortie-reverse {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+            .sortie .content-sortie .elements-sortie  p,
+            .sortie .content-sortie .elements-sortie-reverse  p
+            {
+                width : 60%
+            }
+
+
+
+@media (max-width:640px) {
+
+    .sortie .content-sortie .elements-sortie,
+    .sortie .content-sortie .elements-sortie-reverse {
+        flex-wrap: wrap;
+  
+    }
+
+    .sortie .content-sortie .elements-sortie p,
+    .sortie .content-sortie .elements-sortie-reverse p{
+        width: 90%;
+    }
+        
+}
+
+/***************** coup de coeur ******************/
+
+.coupdecoeur {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+
+}
+
+
+    .coupdecoeur .content-coupdecoeur {
+        width : 65%;
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+        .coupdecoeur .content-coupdecoeur .element-coupdecoeur  {
+            width : 200px;
+            margin-top: 45px;
+            margin-right: 45px;
+        }
+
+@media (max-width:640px) {
+    .coupdecoeur .content-coupdecoeur 
+     {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+  
+    }
+
+    .coupdecoeur .content-coupdecoeur .element-coupdecoeur {
+        width : 120px;
+        margin-top: 25px;
+        margin-right: 25px;
+
+    }
+        
+}
+
+/************* Footer ***************/
+
+footer {
+    background-color : black; 
+    min-height : 100px;
+    display: flex;
+    align-items: center;
+}
+
+    .footer {
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+        .footer ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+        }
+
+        .footer ul li {
+            margin-right: 20px;
+            color : grey;
+        }
+
+        .footer ul li a {
+            text-decoration: none;
+            color: gray;
+        }
+
