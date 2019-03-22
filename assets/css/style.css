@@ -5,7 +5,7 @@
 body {
     padding :0;
     margin: 0;
-    background-image: url(../../img/numero1/bann.gif);
+    background-image: url(../../img/numero2/bann2.png);
     background-repeat: no-repeat;
     background-position: 100% 0%;
     background-size: 100%;
@@ -165,23 +165,36 @@ nav {
         }
 
 
+
+
 /*********************** content *************/
 
 .content {
-    background-image: url("../../img/Background_MusikIn_2.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .interview {
-    margin-top : 120px;
-    
+    font-size: 1.5em;
+    min-height: 170vh;
+    margin-top : 250px;
+    background-image: url("../../trapeze_degrade.png");
+    background-repeat: no-repeat;
+    background-position: 46% 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 .interview .question {
     padding : 20px;
 }
 
- 
+.interview span {
+    color : white ;
+}
+
+
 /************************* Electro swing******************/
 
 .electro {
@@ -209,7 +222,7 @@ nav {
             display: flex;
             justify-content : center;
             align-items: center;
-            
+
         }
 
 @media (max-width:640px) {
@@ -225,7 +238,7 @@ nav {
         width: 100%;
         padding : 10px;
     }
-        
+
 }
 
 
@@ -292,14 +305,14 @@ nav {
     .sortie .content-sortie .elements-sortie,
     .sortie .content-sortie .elements-sortie-reverse {
         flex-wrap: wrap;
-  
+
     }
 
     .sortie .content-sortie .elements-sortie p,
     .sortie .content-sortie .elements-sortie-reverse p{
         width: 90%;
     }
-        
+
 }
 
 /***************** coup de coeur ******************/
@@ -326,12 +339,12 @@ nav {
         }
 
 @media (max-width:640px) {
-    .coupdecoeur .content-coupdecoeur 
+    .coupdecoeur .content-coupdecoeur
      {
         width: 100%;
         display: flex;
         justify-content: center;
-  
+
     }
 
     .coupdecoeur .content-coupdecoeur .element-coupdecoeur {
@@ -340,13 +353,13 @@ nav {
         margin-right: 25px;
 
     }
-        
+
 }
 
 /************* Footer ***************/
 
 footer {
-    background-color : black; 
+    background-color : black;
     min-height : 100px;
     display: flex;
     align-items: center;
