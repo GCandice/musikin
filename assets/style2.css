@@ -290,7 +290,7 @@ footer {
     z-index: 1;
   }
     .artist__blur:hover{
-        filter: blur(0px;);
+        filter: blur(0px);
     }
   .artist__image {
     width: (240px / 2);
