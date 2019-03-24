@@ -11,21 +11,37 @@
     <title>Musikin#2</title>
 </head>
 
-<img id="logo" src="img/Logoblack.png">
+
 
 
 <body>
 
+<!---
     <nav>
-        <!--MENU-->
-        <a href="index.html">Accueil</a>
+         <a href="index.html">Accueil</a>
         <a href="archives.html">Anciens numéros</a>
         <a href="annexe/about.html">A propos</a>
 
     </nav>
 
+-->
+
+    <!---------------->
+
+    <nav class="nav">
+            <a href="" class="logo"><img id="logo" class="logo" src="img/Logoblack.png"></a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="archives.html">Anciens numéros</a></li>
+              <li><a href="annexe/about.html">A propos</a></li>
+            </ul>
+        </nav>
+
     <div class="header">
         <h1 class="header interview-title">Numéro<br /> <span>#02</h1>
+            <h2> Numéro #02</h2>
         <div class="edito">
                 <span>"Bonne année et bonne santé !" </span><p>Au programme ce mois-ci, du changement et du renouveau du côté de MusikIn. Le site, le format, et une nouvelle équipe pour une nouvelle année. Mais pas de panique, notre identité ne changera pas ! Et pourquoi
                     ne pas parler de l'importance d'une identité artistique ? Ce qui anime un groupe sur scène, l'essence qu'il dégage dans ses paroles. Après avoir découvert l'identité très spéciale du groupe du mois, For the Hackers, venez apprendre
@@ -218,7 +234,6 @@
 
 <!-- Script Javascript -->
 
-<!-- JQUERY -->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="assets/js/responsiveslides.min.js"></script>
 <script>
