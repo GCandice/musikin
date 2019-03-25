@@ -12,7 +12,7 @@ body {
     font-family: ebrima;
 }
 
-@media (max-width:640px) {
+@media screen and (max-width: 992px) {
     iframe {
         width: 100%;
     }
@@ -182,7 +182,7 @@ body {
   
   /* 48em = 768px */
   
-  @media (min-width: 48em) {
+  @media (min-width: 60em) {
     .nav li {
       float: left;
     }
@@ -250,7 +250,7 @@ body {
             color: #a5a5a5;
         }
 
-            @media screen and (max-width: 1500px) {
+            @media screen and (max-width: 995px) {
 
                 .header {
                     min-height: 0%;
@@ -325,7 +325,7 @@ body {
     color : white ;
 }
 
-    @media (max-width:640px) {
+    @media screen and (max-width:992px) {
         .interview {
             flex-wrap: wrap;
             justify-content: center;
@@ -372,7 +372,7 @@ body {
             align-items: center;
         }
 
-@media (max-width:640px) {
+ @media screen and (max-width: 992px)  {
 
     .electro {
         display: flex;
@@ -386,7 +386,6 @@ body {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        width : 90%;
         text-align: justify;
     }
     
@@ -407,7 +406,7 @@ body {
 
 
 .detente {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
      justify-content: center;
      flex-direction: column;
@@ -424,7 +423,7 @@ body {
         margin-top: 50px;
     }
 
-    @media (max-width:640px) {
+    @media screen and (max-width: 992px) {
         .detente{
             padding: 40px;
         }
@@ -469,7 +468,7 @@ body {
 
 
 
-@media (max-width:640px) {
+ @media screen and (max-width: 992px)  {
 
     .sortie .content-sortie .elements-sortie,
     .sortie .content-sortie .elements-sortie-reverse {
@@ -516,7 +515,7 @@ body {
             margin-right: 45px;
         }
 
-@media (max-width:640px) {
+@media screen and (max-width: 992px){
 
     .coupdecoeur h1 {
         font-size : 2em;
