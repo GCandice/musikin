@@ -126,7 +126,7 @@ body {
   }
   
   .nav .menu-icon .navicon {
-    background: #333;
+    background: rgb(255, 255, 255);
     display: block;
     height: 2px;
     position: relative;
@@ -136,7 +136,7 @@ body {
   
   .nav .menu-icon .navicon:before,
   .nav .menu-icon .navicon:after {
-    background: #333;
+    background: rgb(255, 255, 255);
     content: '';
     display: block;
     height: 100%;
@@ -463,7 +463,7 @@ body {
             .sortie .content-sortie .elements-sortie  p,
             .sortie .content-sortie .elements-sortie-reverse  p
             {
-                width : 60%
+                width : 30%
             }
 
 
@@ -492,11 +492,13 @@ body {
     background-image: url("../../img/double_trapeze_coup_de_coeur.png");
     background-repeat: no-repeat;
     background-position: 55% 5%; 
+    color : white;
 
 }
     .coupdecoeur h1 {
         font-size : 3em;
         padding-top : 50px;
+        color : black;
     }
 
     .coupdecoeur .content-coupdecoeur {
@@ -596,4 +598,30 @@ footer {
       width : 60px;
       height: 10px;
       background-color: #d67400;
+  }
+
+  .image_1 {
+      background-image: url("../../img/numero2/hugo.jpg");
+  }
+
+  .image_2{
+      background-image: url("../../img/numero2/little_big.jpg");
+  }
+
+  .image_3{
+      background-image: url("../../img/numero2/thevalley.jpg");
+  }
+
+  .image_4{
+    background-image: url("../../img/numero2/lana.jpg");
+}
+  .image_1,
+  .image_2,
+  .image_3,
+  .image_4
+  {
+    width : 615px;
+    height : 300px;
+    background-size: cover;
+    background-position: center;
   }
